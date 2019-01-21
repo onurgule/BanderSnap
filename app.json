@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "scheme": "bsnap",
+    "name": "BanderSnap",
+    "slug": "BanderSnap",
+    "privacy": "public",
+    "sdkVersion": "31.0.0",
+    "android":{
+	  "versionCode":4,
+      "package":"onurgule.bandersnap",
+	  "permissions": ["CAMERA", "RECORD_AUDIO","WRITE_EXTERNAL_STORAGE","READ_EXTERNAL_STORAGE"],
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "data": [
+            {
+              "scheme": "https",
+              "host": "bandersnap.tk",
+              "pathPrefix": "/snap"
+            },
+          ],
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
+        }
+      ]
+    },
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "version": "1.1.1",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#000"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+
+  }
+}
